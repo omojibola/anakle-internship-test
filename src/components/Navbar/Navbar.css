@@ -1,0 +1,144 @@
+.nav-container {
+  background-color: #fff;
+  height: 80px;
+  width: 100%;
+  max-width: 6000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 10;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0 40px;
+}
+
+.nav-start {
+  justify-self: flex-start;
+  display: flex;
+  text-align: center;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-menu .nav-item {
+  list-style-type: none;
+  color: #676767;
+  font-size: 16px;
+  margin: 0 20px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.nav-menu .nav-item:hover {
+  background: #e1e1e1;
+  padding: 7px 13px;
+  transition: 0.3s;
+  color: #1c1c1c;
+}
+
+.nav-start .logo {
+  font-weight: bold;
+  font-size: 26px;
+  color: #1c1c1c;
+}
+
+.nav-menu .nav-item-end {
+  color: #1c1c1c;
+  margin: 0 20px;
+}
+
+.nav-menu .active {
+  background: #e1e1e1;
+  padding: 7px 13px;
+  color: #1c1c1c;
+}
+
+.vl {
+  border-left: 1px solid #e1e1e1;
+  height: 100%;
+}
+.shopping-bag {
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-item-end p {
+  font-size: 14px;
+  color: #676767;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.nav-item-end h5 {
+  font-size: 16px;
+  color: #1c1c1c;
+  text-align: right;
+  margin: 0 0 10px 0;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+/*media queries */
+
+@media screen and (max-width: 1072px) {
+  .nav-menu .nav-item-end {
+    color: #1c1c1c;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-icon {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1c1c1c;
+    margin-right: 20px;
+  }
+
+  .wrapper {
+    margin: 0 30px;
+  }
+  .container {
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-menu .nav-item,
+  .vl,
+  .nav-item-end {
+    display: none;
+  }
+}
