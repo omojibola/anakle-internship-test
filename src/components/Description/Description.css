@@ -125,3 +125,32 @@ section .spec-select:hover {
 .second-section {
   margin-top: 10px;
 }
+
+/* media queries */
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .specification .heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .specification .heading {
+    font-size: 22px;
+  }
+  .spec-select .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 4187px) {
+  .specification .heading {
+    font-size: 16px;
+  }
+  .spec-select .subtitle {
+    font-size: 14px;
+  }
+}

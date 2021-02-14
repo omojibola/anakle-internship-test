@@ -74,3 +74,99 @@ button:hover {
   border: 1px solid #1c1c1c;
   transition: 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 1199px) {
+  footer {
+    overflow: hidden;
+  }
+  .section-one {
+    padding: 0 7px 0 5px;
+  }
+  .section-one p {
+    font-size: 16px;
+  }
+
+  .section-two {
+    width: 500px;
+  }
+  .section-two .top,
+  .section-two .bottom {
+    font-size: 16px;
+  }
+
+  .section-two-container .end h4 {
+    color: #1c1c1c;
+    font-size: 24px;
+    margin-top: 10px;
+
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  footer {
+    margin-top: 50px;
+  }
+
+  button {
+    width: 100px !important;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1163px) {
+  .section-two-container .end {
+    margin-left: 100px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-one {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .section-one {
+    display: none;
+  }
+
+  .section-two-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    height: 150px;
+  }
+  .section-two-container .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+  }
+
+  .section-two {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .section-two-container {
+    margin: 70px 20px;
+  }
+
+  .section-two .top,
+  .section-two .bottom {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .large-image {
+    margin-left: 0;
+  }
+}

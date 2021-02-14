@@ -31,3 +31,18 @@
   border-radius: 5px;
   padding: 10px;
 }
+
+@media screen and (max-width: 1016px) {
+  .large-image {
+    width: 412px;
+    height: 376px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .large-image {
+    width: 312px;
+    height: 276px;
+    margin-left: 15%;
+  }
+}
